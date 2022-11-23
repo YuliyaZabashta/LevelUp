@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LevelUp</title>
+</head>
+<body>
+    <header>
+        <div class="video-background">
+            <div class="video-foreground">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/Y76mH_qDh5w?controls=1&amp;start=48&amp;autoplay=1&amp;loop=1&amp;playlist=Y76mH_qDh5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="vidtop-content">
+            <div class="container">
+                <div class="header-logo">
+                    <h1>LevelUp оставайся тигром</h1>
+                </div>
+                <div class="header-img">
+                    <img src="images/prod.png" alt="">
+                </div>
+                <div class="header-text">
+                    <ul>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                    <a href="#orderForm" type="button" class="order-btn">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="composition">
+        <div class="container">
+            <div class="product" id="min" colspan="3">
+                <img src="images/prod.png" alt="">
+                <a href="#orderForm" type="button" class="order-btn">Заказать</a>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <div class="table-img">
+                        <img src="images/ingr.png" alt="">
+                        <p>Ингридиент</p>
+                        </div>
+                    </td>
+                    <td class="product" id="max" rowspan="3">
+                        <img src="images/prod.png" alt="">
+                        <a href="#orderForm" type="button" class="order-btn">Заказать</a>
+                    </td>
+                    <td>
+                        <div class="table-img">
+                            <img src="images/ingr.png" alt="">
+                            <p>Ингридиент</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><div class="table-img">
+                        <img src="images/ingr.png" alt="">
+                        <p>Ингридиент</p>
+                    </div></td>
+                    <td><div class="table-img">
+                        <img src="images/ingr.png" alt="">
+                        <p>Ингридиент</p>
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><div class="table-img">
+                        <img src="images/ingr.png" alt="">
+                        <p>Ингридиент</p>
+                    </div></td>
+                    <td><div class="table-img">
+                        <img src="images/ingr.png" alt="">
+                        <p>Ингридиент</p>
+                    </div></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="itcss">
+                <div class="itcss__wrapper">
+                    <div class="itcss__items">
+                        <div class="itcss__item"><img src="images/man1.png">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque unde onem libero numquam, quas veniam distinctio animi iusto deleniti eos ut laboriosam porro facilis. <span class="name-man">Mikhael Cors</span></p>
+                        </div>
+                        <div class="itcss__item"><img src="images/man2.png">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit numquam distinctio, quisquam ducimus explicabo fugit quaerat dolorem in dolor ex hic alias consectetur fuga aut?<span class="name-man">Alex Black</span></p>
+                        </div>
+                        <div class="itcss__item"><img src="images/man3.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente explicabo vexpedita ullam quod maiores doloribus, ratione maxime incidunt, eius officia labore quas repellendus aperiam!<span class="name-man">Stephan Wise</span></p>
+                        </div>
+                    </div>
+                    <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+                    <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promo">
+        <div class="container">
+            <div class="promo-img">
+                <img src="images/doctor3r.png" alt="">
+            </div>
+            <div class="promo-text">
+                <p>Lorem ipsum dolor sit amet. Iure, facere. Impedit perspiciatis quae odio culpa aliquam quo quibusdam vel inventore dolore explicabo itaque modi saepe, expedita ab corrupti nostrum pariatur.</p> 
+                <a href="#orderForm" type="button" class="order-btn">Заказать</a>
+            </div>
+            <div class="promo-property">
+                <ul>
+                    <li>Эффективный</li>
+                    <li>Экологичный</li>
+                    <li>Надёжный</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-logo"><h2>LevelUp</h2></div>
+            <div class="timer">
+                <span class="timer__item timer__minutes">00</span>:
+                <span class="timer__item timer__seconds">00</span>
+            </div>
+            <div class="footer-product">
+                <img src="images/prod.png" alt="">
+                <div class="price-block">
+                    <span class="price">2500 руб</span>
+                    <span class="old-price">5400 руб</span>
+                </div>
+            </div>
+            <div class="order-form" id="orderForm">
+                <form>
+                    <label>Ваше имя</label>
+                    <input type="text" class="my-order" value="" required><span id="helpName">?<span id="help-name">Пример: Адександр</span></span>
+                    <label>Телефон</label>
+                    <input type="number" class="my-order" value="" required><span id="helpNum">?<span id="help-num">Пример: +7(999)999-99-99</span></span>
+                    <button class="order-btn" type="submit">Заказать</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script defer src="simple-adaptive-slider.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var slider = new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true,
+        interval: 3000,
+    });
+    });
+    </script>
+    <script defer src="my.js"></script>
+</body>
+</html>
